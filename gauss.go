@@ -13,16 +13,15 @@ func gaussElimination(matrix [][]float64) ([]float64, error) {
 	n := len(matrix)
 	solution := make([]float64, n)
 
-	// Cria uma cópia da matriz para não alterar a original
+	
 	m := make([][]float64, n)
 	for i := range matrix {
 		m[i] = make([]float64, len(matrix[i]))
 		copy(m[i], matrix[i])
 	}
 
-	// Eliminação progressiva com pivotamento
 	for i := 0; i < n; i++ {
-		// Pivotamento parcial
+	
 		maxRow := i
 		for j := i; j < n; j++ {
 			if math.Abs(m[j][i]) > math.Abs(m[maxRow][i]) {
@@ -31,12 +30,11 @@ func gaussElimination(matrix [][]float64) ([]float64, error) {
 		}
 		m[i], m[maxRow] = m[maxRow], m[i]
 
-		// Verifica matriz singular
+	
 		if math.Abs(m[i][i]) < 1e-10 {
 			return nil, fmt.Errorf("matriz singular, sem solução única")
 		}
 
-		// Eliminação
 		for j := i + 1; j < n; j++ {
 			factor := m[j][i] / m[i][i]
 			for k := i; k <= n; k++ {
@@ -45,7 +43,6 @@ func gaussElimination(matrix [][]float64) ([]float64, error) {
 		}
 	}
 
-	// Substituição regressiva
 	for i := n - 1; i >= 0; i-- {
 		solution[i] = m[i][n]
 		for j := i + 1; j < n; j++ {
