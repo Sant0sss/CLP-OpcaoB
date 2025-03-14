@@ -1,6 +1,6 @@
 # 🎓 Universidade Federal de Pelotas - UFPEL  
 
-## ⚙️ Trabalho de CLP  
+## ⚙️ Trabalho de conceitos de linguagens de programação 
 
 ### 👥 Componentes:
 - **Arthur Santos**  
