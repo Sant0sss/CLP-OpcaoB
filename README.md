@@ -26,7 +26,7 @@ Para executar:
 ```bash
 ./gauss
 ````
-###🦀 Em Rust:
+### 🦀 Em Rust:
 Para compilar:
 ```bash
 rustc gauss.rs -o gauss
