@@ -16,36 +16,26 @@
 Para compilar:  
 ```bash
 gcc gauss.c -o gauss.exe -lm
+````
 Para executar:
-
-bash
-Copiar
-Editar
+```bash
 gauss
-🐧 No Linux/macOS:
+````
+### 🐧 No Linux/macOS:
 Para executar:
-
-bash
-Copiar
-Editar
+```bash
 ./gauss
-🦀 Em Rust:
+````
+###🦀 Em Rust:
 Para compilar:
-
-bash
-Copiar
-Editar
+```bash
 rustc gauss.rs -o gauss
+````
 Para executar:
-
-bash
-Copiar
-Editar
+```bash
 ./gauss
-🐹 Em Go:
+````
+### 🐹 Em Go:
 Para executar diretamente:
-
-bash
-Copiar
-Editar
+```bash
 go run gauss.go
